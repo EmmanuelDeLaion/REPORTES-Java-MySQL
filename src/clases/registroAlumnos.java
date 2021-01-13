@@ -102,7 +102,6 @@ public class registroAlumnos extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         txtNumControl = new javax.swing.JTextField();
         btnGenerarReporte = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
         txtApellidoPaterno = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         txtSemestre = new javax.swing.JTextField();
@@ -125,8 +124,6 @@ public class registroAlumnos extends javax.swing.JFrame {
         btnRegistrar1 = new javax.swing.JButton();
         txtCorreo1 = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        txtBuscarNum = new javax.swing.JTextField();
         jLabel15 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -140,7 +137,7 @@ public class registroAlumnos extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        jPanel1.add(txtNumControl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 300, -1));
+        jPanel1.add(txtNumControl, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 300, -1));
 
         btnGenerarReporte.setBackground(new java.awt.Color(0, 102, 102));
         btnGenerarReporte.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
@@ -154,74 +151,68 @@ public class registroAlumnos extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnGenerarReporte, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 530, 120, 30));
-
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 51, 51));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel4.setText("Numero de Control:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 120, -1));
-        jPanel1.add(txtApellidoPaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 300, -1));
+        jPanel1.add(txtApellidoPaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 300, -1));
 
         jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel5.setText("Apellido Paterno:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, 120, -1));
-        jPanel1.add(txtSemestre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 300, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 120, -1));
+        jPanel1.add(txtSemestre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 300, -1));
 
         jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel6.setText("Semestre:");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 120, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 120, -1));
 
         jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(51, 51, 51));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel7.setText("Sexo:");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 120, -1));
-        jPanel1.add(txtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 300, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 120, -1));
+        jPanel1.add(txtSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 300, -1));
 
         jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(51, 51, 51));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel8.setText("Correo:");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 120, -1));
-        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 290, 300, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 120, -1));
+        jPanel1.add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 300, -1));
 
         jLabel9.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel9.setText("Dirección:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 270, 120, -1));
-        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 300, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, 120, -1));
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 300, -1));
 
         jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(51, 51, 51));
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel10.setText("Teléfono:");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 220, 120, -1));
-        jPanel1.add(txtFechaNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 300, -1));
+        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, 120, -1));
+        jPanel1.add(txtFechaNac, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, 300, -1));
 
         jLabel11.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(51, 51, 51));
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel11.setText("Fecha de nacimiento:");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 170, 120, -1));
-        jPanel1.add(txtApellidoMaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 140, 300, -1));
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 150, 120, -1));
+        jPanel1.add(txtApellidoMaterno, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 300, -1));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(51, 51, 51));
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel12.setText("Apellido Materno");
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 120, -1));
-        jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 300, -1));
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 100, 120, -1));
+        jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 300, -1));
 
         jLabel13.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(51, 51, 51));
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel13.setText("Nombre:");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 70, 120, -1));
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 50, 120, -1));
 
         tablaRegistros.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -265,7 +256,7 @@ public class registroAlumnos extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnRegistrar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, 110, 30));
-        jPanel1.add(txtCorreo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 300, -1));
+        jPanel1.add(txtCorreo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 300, -1));
 
         jLabel14.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(204, 204, 204));
@@ -273,20 +264,11 @@ public class registroAlumnos extends javax.swing.JFrame {
         jLabel14.setText("Alumnos Registrados");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 240, -1));
 
-        jButton1.setText("buscar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
-        jPanel1.add(txtBuscarNum, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 230, -1));
-
         jLabel15.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(51, 51, 51));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel15.setText("Numero de Control:");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 120, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 120, -1));
 
         javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
         jPanel13.setLayout(jPanel13Layout);
@@ -400,30 +382,6 @@ public class registroAlumnos extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnGenerarReporteActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        Connection con = null;
-        try {
-
-            con = getConection();
-            String sqlC = "SELECT * FROM alumnos WHERE numcontrol_alumno = ?";
-            ps.setString(1, txtBuscarNum.getText());
-            rs = ps.executeQuery();
-
-            if (rs.next()) {
-                txtNumControl.setText(rs.getNString("numcontrol_alumno"));
-            }else{
-            JOptionPane.showMessageDialog(null, "No existe ese numero de control");
-            }
-
-        } catch (Exception e) {
-            System.err.println(e);
-
-        }
-
-
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     conectar cc = new conectar();
     Connection cn = cc.conexion();
 
@@ -458,7 +416,6 @@ public class registroAlumnos extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGenerarReporte;
     private javax.swing.JButton btnRegistrar1;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -467,7 +424,6 @@ public class registroAlumnos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -480,7 +436,6 @@ public class registroAlumnos extends javax.swing.JFrame {
     private javax.swing.JTable tablaRegistros;
     private javax.swing.JTextField txtApellidoMaterno;
     private javax.swing.JTextField txtApellidoPaterno;
-    private javax.swing.JTextField txtBuscarNum;
     private javax.swing.JTextField txtCorreo1;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtFechaNac;
