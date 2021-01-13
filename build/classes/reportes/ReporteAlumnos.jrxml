@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cc390cde-44cf-4616-be2e-97ff0f7ba94e">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     alumnos.`numcontrol_alumno` AS alumnos_numcontrol_alumno,
+     alumnos.`nombre_alumno` AS alumnos_nombre_alumno,
+     alumnos.`apellidop_alumno` AS alumnos_apellidop_alumno,
+     alumnos.`apellidom_alumno` AS alumnos_apellidom_alumno,
+     alumnos.`semestre_alumno` AS alumnos_semestre_alumno,
+     alumnos.`fechanac_alumno` AS alumnos_fechanac_alumno,
+     alumnos.`correo_alumno` AS alumnos_correo_alumno,
+     alumnos.`telefono_alumno` AS alumnos_telefono_alumno,
+     alumnos.`sexo_alumno` AS alumnos_sexo_alumno,
+     alumnos.`direccion_alumno` AS alumnos_direccion_alumno
+FROM
+     `alumnos` alumnos]]>
+	</queryString>
+	<field name="alumnos_numcontrol_alumno" class="java.lang.String"/>
+	<field name="alumnos_nombre_alumno" class="java.lang.String"/>
+	<field name="alumnos_apellidop_alumno" class="java.lang.String"/>
+	<field name="alumnos_apellidom_alumno" class="java.lang.String"/>
+	<field name="alumnos_semestre_alumno" class="java.lang.Integer"/>
+	<field name="alumnos_fechanac_alumno" class="java.lang.String"/>
+	<field name="alumnos_correo_alumno" class="java.lang.String"/>
+	<field name="alumnos_telefono_alumno" class="java.lang.String"/>
+	<field name="alumnos_sexo_alumno" class="java.lang.String"/>
+	<field name="alumnos_direccion_alumno" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="55" height="20" uuid="6b12425a-ad9c-499d-b862-a3adc284c338"/>
+				<text><![CDATA[alumnos_numcontrol_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="0" width="55" height="20" uuid="341b4383-13bd-4083-afa2-73bc7f80823d"/>
+				<text><![CDATA[alumnos_nombre_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="55" height="20" uuid="93fe9c54-9133-4169-8957-236c62d0b6ec"/>
+				<text><![CDATA[alumnos_apellidop_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="165" y="0" width="55" height="20" uuid="47003225-7ca4-4919-a442-0f5dbab74796"/>
+				<text><![CDATA[alumnos_apellidom_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="55" height="20" uuid="43b214f1-7234-4eb2-99b6-152bb0f79a22"/>
+				<text><![CDATA[alumnos_semestre_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="0" width="55" height="20" uuid="b239775a-0735-407b-831b-10fd22e17627"/>
+				<text><![CDATA[alumnos_fechanac_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="55" height="20" uuid="8cd93052-080f-4102-b843-3f58c1ccdf53"/>
+				<text><![CDATA[alumnos_correo_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="385" y="0" width="55" height="20" uuid="50337c37-c0e4-4b2d-a73a-1738c81bf761"/>
+				<text><![CDATA[alumnos_telefono_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="55" height="20" uuid="7f38ed75-3c27-4f3d-9d6d-4110f3dcf697"/>
+				<text><![CDATA[alumnos_sexo_alumno]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="495" y="0" width="55" height="20" uuid="f13f0551-6dae-45a0-9f37-d0732c4760e4"/>
+				<text><![CDATA[alumnos_direccion_alumno]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="39" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="55" height="20" uuid="01979785-bc3d-428a-8668-a379be0b1c18"/>
+				<textFieldExpression><![CDATA[$F{alumnos_numcontrol_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="55" y="0" width="55" height="20" uuid="6ef408e2-9611-458b-9735-cb41e35351ea"/>
+				<textFieldExpression><![CDATA[$F{alumnos_nombre_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="0" width="55" height="20" uuid="d31d9eea-5e75-4bd3-9b60-07cd956b6ae8"/>
+				<textFieldExpression><![CDATA[$F{alumnos_apellidop_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="165" y="0" width="55" height="20" uuid="fede2229-056d-4393-b3b3-7841b900e10b"/>
+				<textFieldExpression><![CDATA[$F{alumnos_apellidom_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="0" width="55" height="20" uuid="634b237c-e223-44cf-97c0-768e58557a78"/>
+				<textFieldExpression><![CDATA[$F{alumnos_semestre_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="275" y="0" width="55" height="20" uuid="37e3a931-a90b-4d21-a6ed-8ead10f3a21f"/>
+				<textFieldExpression><![CDATA[$F{alumnos_fechanac_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="0" width="55" height="20" uuid="5cda4c2b-860c-4c0b-b18d-a050f603a387"/>
+				<textFieldExpression><![CDATA[$F{alumnos_correo_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="0" width="55" height="20" uuid="10619724-a7d3-4fd9-966f-e4b38c25a6c2"/>
+				<textFieldExpression><![CDATA[$F{alumnos_telefono_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="55" height="20" uuid="264a043f-77b7-45ad-ae2d-ce67c2249bad"/>
+				<textFieldExpression><![CDATA[$F{alumnos_sexo_alumno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="495" y="0" width="55" height="20" uuid="51c330a4-ac68-46d9-a36e-e17721a16ce3"/>
+				<textFieldExpression><![CDATA[$F{alumnos_direccion_alumno}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="104" splitType="Stretch"/>
+	</summary>
+</jasperReport>
